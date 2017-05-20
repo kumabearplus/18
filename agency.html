@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>代理</title>
+  <style type="text/css">
+  	ul,li {
+  	  margin: 0;
+  	  padding: 0;
+  	  list-style: none;
+  	}
+ 	body {
+  	  font-size: 12px;
+  	  font-family: Arial;
+  	}
+  	a {
+  	  text-decoration: none;
+  	  color: #000;
+  	}
+  	.content {
+  	  width: 700px;
+  	  margin: 30px auto;
+  	}
+  	.content>p {
+  	  font-size: 24px;
+  	}
+  	.product-ct:after {
+  	  content: '';
+  	  display: block;
+  	  clear: both;
+  	}
+  	.product-ct {
+  	  margin-top: -20px;
+  	  margin-right: -20px;
+  	}
+  	.product {
+  	  position: relative;
+  	  float: left;
+  	  width: 220px;
+  	  padding: 10px 20px;
+  	  margin-top: 20px;
+  	  margin-right: 20px;
+  	  border: 1px solid #EFECEC;
+  	  box-sizing: border-box;
+  	}
+  	.cover {
+  	  position: absolute;
+  	  top: 0;
+  	  left: 0;
+  	  right: 0;
+  	  bottom: 0;
+  	  background: rgba(0,0,0,0.3);
+  	  display: none;
+  	  //opacity: 0;
+  	}
+  	.cover>a {
+  	  position: absolute;
+  	  left: 50%;
+  	  top: 50%;
+  	  transform: translate(-50%,-50%);
+  	  border: 1px solid red;
+  	  color: red;
+  	  padding: 10px;
+  	  background-color: #fff;
+  	}
+  	.product-show {
+  	  text-align: center;
+  	}
+  	.product-name {
+  	  text-align: left;
+  	}
+  	.product-price {
+  	  color: red;
+  	  font-size: 14px;
+  	  text-align: left;
+  	}
+  	.hover .cover {
+  	  display: block;
+  	}
+  	#btn {
+  	  margin: 20px 0;
+  	  padding: 10px;
+  	  color: red;
+  	}
+  	.go-top {
+  	  position: fixed;
+  	  right: 10px;
+  	  bottom: 10px;
+  	  width: 60px;
+  	  height: 40px;
+  	  line-height: 40px;
+  	  text-align: center;
+  	  font-size: 15px;
+  	  background-color: #ccc;
+  	  cursor: pointer;
+  	  display: none;
+  	}
+
+  </style>
+</head>
+<body>
+  <div class="content">
+  	<p>珠宝首饰</p>
+  	<ul class="product-ct">
+  	  <li class="product">
+      	<div class="cover">
+      	  <a href="#">立即抢购</a>
+      	</div>
+      	<div class="product-show">
+      	  <img src="http://img10.360buyimg.com/N3/jfs/t1360/330/897475737/123557/23624706/55b05e25N13d4ec5e.jpg" alt="吊坠">
+      	  <p class="product-name">藏美千足金和田玉金镶玉路路通吊坠</p>
+      	  <p class="product-price">¥1699.00</p>
+      	</div>
+      </li>
+      <li class="product">
+      	<div class="cover">
+      	  <a href="#">立即抢购</a>
+      	</div>
+      	<div class="product-show">
+      	  <img src="http://img10.360buyimg.com/N3/jfs/t1360/330/897475737/123557/23624706/55b05e25N13d4ec5e.jpg" alt="吊坠">
+      	  <p class="product-name">藏美千足金和田玉金镶玉路路通吊坠</p>
+      	  <p class="product-price">¥1699.00</p>
+      	</div>
+      </li>
+      <li class="product">
+      	<div class="cover">
+      	  <a href="#">立即抢购</a>
+      	</div>
+      	<div class="product-show">
+      	  <img src="http://img10.360buyimg.com/N3/jfs/t1360/330/897475737/123557/23624706/55b05e25N13d4ec5e.jpg" alt="吊坠">
+      	  <p class="product-name">藏美千足金和田玉金镶玉路路通吊坠</p>
+      	  <p class="product-price">¥1699.00</p>
+      	</div>
+      </li>
+      <li class="product">
+      	<div class="cover">
+      	  <a href="#">立即抢购</a>
+      	</div>
+      	<div class="product-show">
+      	  <img src="http://img10.360buyimg.com/N3/jfs/t1360/330/897475737/123557/23624706/55b05e25N13d4ec5e.jpg" alt="吊坠">
+      	  <p class="product-name">藏美千足金和田玉金镶玉路路通吊坠</p>
+      	  <p class="product-price">¥1699.00</p>
+      	</div>
+      </li>
+      <li class="product">
+      	<div class="cover">
+      	  <a href="#">立即抢购</a>
+      	</div>
+      	<div class="product-show">
+      	  <img src="http://img10.360buyimg.com/N3/jfs/t1360/330/897475737/123557/23624706/55b05e25N13d4ec5e.jpg" alt="吊坠">
+      	  <p class="product-name">藏美千足金和田玉金镶玉路路通吊坠</p>
+      	  <p class="product-price">¥1699.00</p>
+      	</div>
+      </li>
+      <li class="product">
+      	<div class="cover">
+      	  <a href="#">立即抢购</a>
+      	</div>
+      	<div class="product-show">
+      	  <img src="http://img10.360buyimg.com/N3/jfs/t1360/330/897475737/123557/23624706/55b05e25N13d4ec5e.jpg" alt="吊坠">
+      	  <p class="product-name">藏美千足金和田玉金镶玉路路通吊坠</p>
+      	  <p class="product-price">¥1699.00</p>
+      	</div>
+      </li>
+  	</ul>   
+  	<button id="btn">添加</button>
+  	<div class="go-top">回到顶部</div>
+  </div>
+  <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script type="text/javascript">
+  	var products = [
+	    {
+		  img: 'http://img10.360buyimg.com/N3/jfs/t2242/92/1446546284/374195/9196ac66/56af0958N1a723458.jpg',
+		  name: '珂兰 黄金手 猴哥款',
+		  price: '￥405.00'
+		},{
+		  img: 'http://img10.360buyimg.com/N3/jfs/t2242/92/1446546284/374195/9196ac66/56af0958N1a723458.jpg',
+		  name: '珂兰 黄金转运珠 猴哥款',
+		  price: '￥100.00'
+		},{
+		  img: 'http://img10.360buyimg.com/N3/jfs/t2242/92/1446546284/374195/9196ac66/56af0958N1a723458.jpg',
+		  name: '珂兰 黄金手链 3D猴哥款',
+		  price: '￥45.00'
+		}
+	];
+
+	function getProductHtml(product){
+	  var htmls = ''
+	  htmls += '<li class="product">'
+	  htmls +=   '<div class="cover">'
+	  htmls +=     '<a href="#">立即抢购</a>'
+	  htmls +=   '</div>'
+	  htmls +=   '<div class="product-show">'
+	  htmls +=     '<img src="' + product.img + '" alt="吊坠">'
+	  htmls +=     '<p class="product-name">' + product.name +'</p>'
+	  htmls +=     '<p class="product-price">' + product.price +'</p>'
+	  htmls +=   '</div>'
+	  htmls += '</li>'
+	  return htmls
+	}
+	var $btn = $('#btn')
+	var $ct = $('.product-ct')
+	var $goTop = $('.go-top')
+	$btn.on('click', function(e){
+	  e.preventDefault()
+	  $.each(products,function(idx,product){
+	  	var htmls = getProductHtml(product)
+	  	$('.product-ct').append(htmls)
+	  })
+	})
+	$ct.on('mouseenter','li',function(){
+  	  //$(this).addClass('hover')
+  	  $(this).find('.cover').css('display','block')
+  	})
+  	$ct.on('mouseleave','li',function(){
+  	  //$(this).removeClass('hover')
+  	  $(this).find('.cover').css('display','none')
+  	})
+  	$(window).on('scroll',function(){
+  	  var top = $(window).scrollTop()
+  	  if (top > 100) {
+  	  	$goTop.css('display','block')
+  	  }else{
+  	  	$goTop.css('display','none')
+  	  }
+  	})
+  	$goTop.on('click',function(){
+  	  $(window).scrollTop(0)
+  	})
+  </script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>导航</title>
+  <style type="text/css">
+  	ul,li {
+  	  margin: 0;
+  	  padding: 0;
+  	  list-style: none;
+  	}
+  	a {
+  	  text-decoration: none;
+  	  color: #fff;
+  	}
+  	.navi {
+  	  background-color: #c7171e;
+  	  width: 200px;
+  	  color: #fff;
+  	}
+  	.sort {
+  	  position: relative;
+  	}
+  	.sort-child {
+  	  position: absolute;
+  	  left: 200px;
+  	  top: 0;
+  	  width: 200px;
+  	  border: 1px solid #ccc;
+  	  display: none;
+  	}
+  	.sort>a {
+  	  display: block;
+  	  padding: 10px;
+  	  margin: 0 10px;
+  	  border-bottom: 1px dotted #de272e;
+  	 //color: #fff;
+  	}
+  	.sort>span {
+  	  position: absolute;
+  	  top: 10px;
+  	  right: 10px;
+  	}
+  	.sort-child>li {
+  	  float: left;
+  	  display: block;
+  	  width: 100px;
+  	  padding: 10px;
+  	  box-sizing: border-box;
+  	}
+  	.sort-child a {
+  	  color: #000;
+  	}
+  	a:hover {
+  	  color: pink;
+  	}
+  </style>
+</head>
+<body>
+  <div class="navi">
+  	<ul class="navi-aside">
+  	  <li class="sort">
+  	  	<a href="#">珠宝玉器</a>
+  	  	<span>></span>
+  	  	<ul class="sort-child">
+  	  	  <li><a href="">翡翠</a></li>
+  	  	  <li><a href="">玉石</a></li>
+  	  	  <li><a href="">宝石</a></li>
+  	  	  <li><a href="">水晶</a></li>
+  	  	  <li><a href="">珍珠</a></li>
+  	  	  <li><a href="">琥珀</a></li>
+  	  	  <li><a href="">砖石</a></li>
+  	  	  <li><a href="">玛瑙</a></li>
+  	  	  <li><a href="">和田</a></li>
+  	  	  <li><a href="">翡翠</a></li>
+  	  	</ul>
+  	  </li>
+  	  <li class="sort">
+  	  	<a href="#">珠宝玉器</a>
+  	  	<span>></span>
+  	  	<ul class="sort-child">
+  	  	  <li><a href="">翡翠</a></li>
+  	  	  <li><a href="">玉石</a></li>
+  	  	  <li><a href="">宝石</a></li>
+  	  	  <li><a href="">水晶</a></li>
+  	  	  <li><a href="">珍珠</a></li>
+  	  	  <li><a href="">琥珀</a></li>
+  	  	  <li><a href="">砖石</a></li>
+  	  	</ul>
+  	  </li>
+  	  <li class="sort">
+  	  	<a href="#">珠宝玉器</a>
+  	  	<span>></span>
+  	  	<ul class="sort-child">
+  	  	  <li><a href="">翡翠</a></li>
+  	  	  <li><a href="">玉石</a></li>
+  	  	  <li><a href="">宝石</a></li>
+  	  	  <li><a href="">珍珠</a></li>
+  	  	  <li><a href="">琥珀</a></li>
+  	  	  <li><a href="">砖石</a></li>
+  	  	  <li><a href="">玛瑙</a></li>
+  	  	  <li><a href="">和田</a></li>
+  	  	</ul>
+  	  </li>
+  	  <li class="sort">
+  	  	<a href="#">珠宝玉器</a>
+  	  	<span>></span>
+  	  	<ul class="sort-child">
+  	  	  <li><a href="">翡翠</a></li>
+  	  	  <li><a href="">玉石</a></li>
+  	  	  <li><a href="">宝石</a></li>
+  	  	  <li><a href="">水晶</a></li>
+  	  	  <li><a href="">珍珠</a></li>
+  	  	  <li><a href="">琥珀</a></li>
+  	  	  <li><a href="">砖石</a></li>
+  	  	  <li><a href="">玛瑙</a></li>
+  	  	</ul>
+  	  </li>
+  	  <li class="sort">
+  	  	<a href="#">珠宝玉器</a>
+  	  	<span>></span>
+  	  	<ul class="sort-child">
+  	  	  <li><a href="">翡翠</a></li>
+  	  	  <li><a href="">玉石</a></li>
+  	  	  <li><a href="">宝石</a></li>
+  	  	  <li><a href="">水晶</a></li>
+  	  	  <li><a href="">珍珠</a></li>
+  	  	  <li><a href="">琥珀</a></li>
+  	  	</ul>
+  	  </li>
+  	</ul>
+  </div>
+  <script src='http://code.jquery.com/jquery-1.7.1.min.js'></script>
+  <script type="text/javascript">
+  	var $sort = $('.sort')
+  	var $sortChild = $('.sort-child')
+  	$sort.on('mouseenter',function(){
+  	  //$(this).find($sortChild).css('display','block')
+  	  $(this).find($sortChild).show()
+  	})
+  	$sort.on('mouseleave',function(){
+  	  //$(this).find($sortChild).css('display','none')
+  	  $(this).find($sortChild).hide()
+  	})
+  </script>
+</body>
+</html>
